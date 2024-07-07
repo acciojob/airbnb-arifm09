@@ -46,7 +46,7 @@ public class Repository {
         return hotelName;
     }
 
-    public int bookARoom(Booking booking) {
+    public Integer bookARoom(Booking booking) {
 
         String bookingId = String.valueOf(UUID.randomUUID());
         int bookingAadharCard = booking.getBookingAadharCard();

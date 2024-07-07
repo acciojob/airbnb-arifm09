@@ -25,7 +25,7 @@ public class Service {
        return repository.getHotelWithMostFacilities();
     }
 
-    public int bookARoom(Booking booking) {
+    public Integer bookARoom(Booking booking) {
        return repository.bookARoom(booking);
     }
 
