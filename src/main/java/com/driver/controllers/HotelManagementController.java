@@ -70,11 +70,11 @@ public class HotelManagementController {
         //in other case return total amount paid)
 
         return service.bookARoom(booking);
-//        return -1;
+
     }
     
     @GetMapping("/get-bookings-by-a-person/{aadharCard}")
-    public Booking getBookings(@PathVariable("aadharCard")int aadharCard)
+    public Integer getBookings(@PathVariable("aadharCard")int aadharCard)
     {
         //In this function return the bookings done by a person
       return  service.getBookings(aadharCard);

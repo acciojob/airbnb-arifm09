@@ -29,7 +29,7 @@ public class Service {
        return repository.bookARoom(booking);
     }
 
-    public Booking getBookings(int aadharCard) {
+    public Integer getBookings(int aadharCard) {
         return repository.getBookings(aadharCard);
     }
 

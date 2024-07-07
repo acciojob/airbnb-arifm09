@@ -75,15 +75,16 @@ public class Repository {
 
     }
 
-    public Booking getBookings(int aadharCard) {
-
+    public Integer getBookings(int aadharCard) {
+         int cnt = 0;
         for(String booking: bookingDb.keySet()){
             if(bookingDb.get(booking).getBookingAadharCard()==aadharCard){
-                return bookingDb.get(booking);
+                cnt++;
+//                return bookingDb.get(booking);
             }
         }
 
-        return null;
+        return cnt;
     }
 
     public Hotel updateFacalities(List<Facility> newFacilities, String hotelName) {
